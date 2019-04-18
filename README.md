@@ -1,6 +1,6 @@
 # Status
 
-This package is currently in the active development.
+This package is currently under active development.
 
 # Installation
 
@@ -36,4 +36,4 @@ froozeify_sqlite_backup:
 
 # License
 
-See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
+See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
