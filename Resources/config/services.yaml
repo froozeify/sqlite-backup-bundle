@@ -1,0 +1,17 @@
+services:
+  froozeify.sqlite_backup:
+    class: Froozeify\SqliteBackupBundle\Service\SqliteConfigurationService
+    arguments:
+      $sqliteFile: '%froozeify.sqlite_backup.original_file%'
+      $backupFile: '%froozeify.sqlite_backup.backup_file%'
+
+
+  Froozeify\SqliteBackupBundle\Command\SqliteBackup:
+    tags: ['console.command']
+    arguments:
+      $sqliteConfigurationService: "@froozeify.sqlite_backup"
+
+  Froozeify\SqliteBackupBundle\Command\SqliteRestore:
+    tags: ['console.command']
+    arguments:
+      $sqliteConfigurationService: "@froozeify.sqlite_backup"
