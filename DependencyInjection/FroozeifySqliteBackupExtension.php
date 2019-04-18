@@ -14,16 +14,6 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-/**
- * https://symfony.com/doc/current/bundles/configuration.html
- * https://symfony.com/doc/current/bundles/extension.html
- * https://github.com/tsantos84/serializer-bundle/blob/master/composer.json
- *
- * https://johannespichler.com/developing-composer-packages-locally/
- *
- * https://www.youtube.com/watch?v=sNmpddaseK8
- */
-
 class FroozeifySqliteBackupExtension extends Extension {
 	public function load(array $configs, ContainerBuilder $container) {
 		$loader = new YamlFileLoader(
