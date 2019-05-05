@@ -26,13 +26,13 @@ froozeify_sqlite_backup:
 
 `php bin/console froozeify:sqlite:backup [<output>]`
 
-- `output`: Optional allow you to change you copied file location and name
+- `output`: *Optional* allow you to change your copied file location and name
 
 ## Restore your SQLite file
 
 `php bin/console froozeify:sqlite:restore [<input>]`
 
-- `input`: Optional allow you to change you source backup file path
+- `input`: *Optional* allow you to change your source backup file path
 
 # License
 
