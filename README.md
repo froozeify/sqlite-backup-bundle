@@ -4,6 +4,8 @@ This package is currently under active development.
 
 # Installation
 
+You can install this package with composer: `composer require froozeify/sqlite-backup-bundle --dev`
+
 For the moment, no symfony recipes has been created.
 
 You must create a `froozeify_sqlite_backup.yml` in your package config directory (`/config/packages`)
